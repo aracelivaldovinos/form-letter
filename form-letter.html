@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Form Letter</title>
+</head>
+<body>
+  <div class="container">
+    <hi>Create your own virtual postcard!</hi>
+    <form id="formOne">
+      <div class="group-one">
+        <label for="recipient">Recipient's name</label>
+        <input id="recipient" class="form-control", type="text"> 
+      </div>
+      <div class="group-one">
+        <label for="sender">Sender's name</label>
+        <input id="sender" class="form-control", type="text"> 
+      </div>
+      <div class="group-one">
+        <label for="fullName">Sender's full name</label>
+        <input id="fullName" class="form-control", type="text"> 
+      </div>
+      <div class="group-one">
+        <label for="address">Address</label>
+        <input id="address" class="form-control", type="text"> 
+      </div>
+      <div class="group-one">
+        <label for="cityZip">City, Zipcode</label>
+        <input id="cityZip" class="form-control", type="text"> 
+      </div>
+      <div class="group-one">
+        <label for="state">State</label>
+        <input id="state" class="form-control", type="text"> 
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    <div id="letter">
+      <div class ="row">
+        <div class ="col-10">
+          <h2>Greetings from <span class="state"></span>! </h2>
+          <p>Dear <span class="recipient"></span>,</p>
+          <p>I hope your travel to <span class="state"></span> is marvelous and that you take care of yourself. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Please send us some pictures of your adventures!</p>
+          <p>Love,</p>
+          <p><span class="sender"></span></p>   
+        </div>
+        <div class="col-2">
+          <div class="background">
+            <p><span class="fullName"></span></p>
+            <p><span class="address"></span></p>
+            <p><span class="cityZip"></span></p>
+            <p><span class="state"></span></p>
+          </div>
+        </div>  
+      </div> 
+    </div> 
+  </div>
+</body>
+</html>
